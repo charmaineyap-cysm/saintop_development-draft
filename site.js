@@ -22,6 +22,7 @@ const I18N = {
     "nav.renovation":"Renovation","proj.all":"See all projects & track record →","about.title":"Aluminium & glass specialists since 2008","about.lead":"Based in Bukit Serdang, we supply and install spider wall and curtain wall glazing, aluminium windows and doors, skylights and mosquito netting, working closely with interior designers, architects and builders.","contact.title":"Visit our factory or message us",
     "why.lead":"Since 2008 we have measured, fabricated and installed every job with our own crew, so one company answers for the result.",
     "cl.kicker":"Valued Clients","cl.title":"Trusted by developers, brands and businesses",
+    "cl.n1":"Clients served","cl.n2":"Property developers","cl.g2":"Brands & retail","cl.g3":"Corporate & services","cl.note":"Logos are trademarks of their respective owners. Selected clients from residential, commercial and developer projects since 2008.",
     "wa.quote":"Hi Saintop, I would like a quotation.","wa.item":"Hi Saintop, I am interested in: "
   },
   zh: {
@@ -47,6 +48,7 @@ const I18N = {
     "nav.renovation":"装修","proj.all":"查看全部项目与工程记录 →","about.title":"自 2008 年起的铝材与玻璃专家","about.lead":"我们位于 Bukit Serdang，供应并安装点式玻璃幕墙、玻璃幕墙、铝窗铝门、天窗与纱网，与室内设计师、建筑师及承包商紧密合作。","contact.title":"欢迎到访工厂或联系我们",
     "why.lead":"自 2008 年起，每一项工程都由我们自家团队测量、制作与安装，由同一家公司对结果负责。",
     "cl.kicker":"合作客户","cl.title":"深受发展商、品牌与企业信赖",
+    "cl.n1":"服务客户","cl.n2":"房地产发展商","cl.g2":"品牌与零售","cl.g3":"企业与服务","cl.note":"标志为各自所有者的商标。以上为 2008 年以来住宅、商业及发展商项目的部分客户。",
     "wa.quote":"您好 Saintop，我想询问报价。","wa.item":"您好 Saintop，我对这款产品有兴趣："
   },
   ms: {
@@ -72,6 +74,7 @@ const I18N = {
     "nav.renovation":"Ubah Suai","proj.all":"Lihat semua projek & rekod →","about.title":"Pakar aluminium & kaca sejak 2008","about.lead":"Berpangkalan di Bukit Serdang, kami membekal dan memasang kaca spider wall dan curtain wall, tingkap dan pintu aluminium, skylight serta jaring nyamuk, bekerjasama rapat dengan pereka dalaman, arkitek dan kontraktor.","contact.title":"Kunjungi kilang kami atau hubungi kami",
     "why.lead":"Sejak 2008, setiap kerja diukur, difabrikasi dan dipasang oleh pasukan kami sendiri, jadi satu syarikat bertanggungjawab atas hasilnya.",
     "cl.kicker":"Pelanggan Kami","cl.title":"Dipercayai oleh pemaju, jenama dan perniagaan",
+    "cl.n1":"Pelanggan","cl.n2":"Pemaju hartanah","cl.g2":"Jenama & runcit","cl.g3":"Korporat & perkhidmatan","cl.note":"Logo ialah tanda dagangan pemilik masing-masing. Pelanggan terpilih daripada projek kediaman, komersial dan pemaju sejak 2008.",
     "wa.quote":"Hai Saintop, saya ingin mendapatkan sebut harga.","wa.item":"Hai Saintop, saya berminat dengan: "
   }
 };
