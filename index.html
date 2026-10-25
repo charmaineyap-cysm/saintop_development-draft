@@ -18,6 +18,10 @@
   html[lang="zh"] { --head: "Noto Sans SC", sans-serif; --body: "Noto Sans SC", system-ui, sans-serif; }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+  [id] { scroll-margin-top: 92px; }
+  .downloads { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 32px; padding: 18px 20px; border-radius: 12px; background: var(--paper); }
+  .downloads strong { margin-right: 6px; }
+  .downloads .dl { padding: 8px 14px; font-size: 14px; background: #fff; }
   body { margin: 0; font-family: var(--body); color: var(--ink); background: #fff; line-height: 1.6; }
   a { color: inherit; text-decoration: none; }
   img { display: block; max-width: 100%; }
@@ -251,7 +255,7 @@
         <div><b>CIDB G5</b><span data-i18n="stat.reg">Registered contractor</span></div>
       </div>
     </div>
-    <div class="logo-panel"><img src="img/logo-grey.png" alt="Saintop logo"></div>
+    <div class="logo-panel"><img src="img/logo-grey-white.png" alt="Saintop logo"></div>
   </div>
 </div>
 
@@ -277,11 +281,8 @@
     <div class="catalog" id="catalog">
       <h3 data-i18n="cat.title">Full catalogue</h3>
       <p data-i18n="cat.sub">Every size, glass type and colour is made to order. Tap a picture to see the catalogue page.</p>
-      <div class="filters" role="group" aria-label="Filter products"></div>
-      <div class="grid" id="grid"></div>
-      <div class="more"><button id="more" data-i18n="cat.more">Show all products</button></div>
-      <div class="filters" id="downloads" style="margin:40px 0 0;align-items:center">
-        <strong style="margin-right:6px" data-i18n="prod.dl">Download PDF catalogues</strong>
+      <div class="downloads" id="downloads">
+        <strong data-i18n="prod.dl">Download PDF catalogues</strong>
         <a class="dl" href="catalogues/Saintop-Window.pdf" download data-i18n="f.window">Windows</a>
         <a class="dl" href="catalogues/Saintop-Sliding-Folding-Door.pdf" download data-i18n="f.sliding">Sliding & Folding</a>
         <a class="dl" href="catalogues/Saintop-Swing-Door.pdf" download data-i18n="f.swing">Swing Doors</a>
@@ -289,6 +290,9 @@
         <a class="dl" href="catalogues/Saintop-Glass-Partition.pdf" download data-i18n="f.glass">Glass & Shower</a>
         <a class="dl" href="catalogues/Saintop-Netting-Mesh.pdf" download data-i18n="f.netting">Netting & Grille</a>
       </div>
+      <div class="filters" role="group" aria-label="Filter products"></div>
+      <div class="grid" id="grid"></div>
+      <div class="more"><button id="more" data-i18n="cat.more">Show all products</button></div>
     </div>
   </div>
 </section>
@@ -358,7 +362,7 @@
 
 <footer>
   <div class="wrap">
-    <div class="fb"><img src="img/logo-grey.png" alt=""><span>© <span id="yr"></span> Saintop Development Sdn. Bhd. <span lang="zh">新達建築工程有限公司</span> (200801002853 / 804137-H) · CIDB G5 (0120210805-WP079623)</span></div>
+    <div class="fb"><img src="img/logo-grey-white.png" alt=""><span>© <span id="yr"></span> Saintop Development Sdn. Bhd. <span lang="zh">新達建築工程有限公司</span> (200801002853 / 804137-H) · CIDB G5 (0120210805-WP079623)</span></div>
     <span class="tag" data-i18n="foot.tag">Glass · Aluminium · Contracts</span>
   </div>
 </footer>
