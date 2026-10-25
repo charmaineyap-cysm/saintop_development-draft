@@ -216,7 +216,7 @@ footer .wrap { border-top: 1px solid #24277A; display: flex; align-items: center
 footer .fb { display: flex; align-items: center; gap: 12px; }
 footer img { width: 32px; }
 footer .tag { color: var(--soft); font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.fab { position: fixed; right: 16px; bottom: 16px; z-index: 30; display: inline-flex; align-items: center; gap: 8px; background: #1fa855; color: #fff; border-radius: 999px; padding: 12px 18px; font-weight: 700; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+.fab { position: fixed; right: 16px; bottom: 84px; z-index: 30; display: inline-flex; align-items: center; gap: 8px; background: #1fa855; color: #fff; border-radius: 999px; padding: 12px 18px; font-weight: 700; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
 .fab svg { width: 18px; height: 18px; }
 
 @media (max-width: 1100px) {
