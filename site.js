@@ -6,7 +6,7 @@ const I18N = {
     "hero.cta1":"WhatsApp for a Free Quote","hero.cta2":"Browse Catalogue","stat.est":"Established","stat.yrs":"20+ yrs","stat.exp":"Specialist experience","stat.reg":"Registered contractor",
     "trust":"Trusted by leading developers","prod.kicker":"Our Products","prod.title":"Fully customised aluminium & glass for every space","prod.dl":"Download PDF catalogues","designs":"designs",
     "t.window":"Windows","d.window":"Casement · Sliding · Folding · Louvre","t.sliding":"Sliding & Folding Doors","d.sliding":"Multi-lock · French · Bi-fold up to 10 panels","t.swing":"Swing Doors","d.swing":"Standard · Slim · Frameless tempered","t.toptrack":"Top Track Doors","d.toptrack":"Ghost door · PT door · Slim profile","t.glass":"Glass Partition & Shower","d.glass":"Shopfront · U-channel · Railing · Mirror","t.netting":"Netting & Grille","d.netting":"Magnetic · Z-fold netting · Window grille",
-    "cat.title":"Full catalogue","cat.sub":"Every size, glass type and colour is made to order. Tap a picture to see the catalogue page.","cat.more":"Show all products","cat.enquire":"Enquire",
+    "cat.title":"Full catalogue","cat.sub":"Every size, glass type and colour is made to order. Tap a picture to see the catalogue page.","cat.more":"Show all products","cat.enquire":"Enquire","cat.pdf":"PDF catalogue","cat.enqwa":"Enquire on WhatsApp",
     "f.all":"All","f.window":"Windows","f.sliding":"Sliding & Folding","f.swing":"Swing Doors","f.toptrack":"Top Track","f.glass":"Glass & Shower","f.netting":"Netting & Grille",
     "proj.kicker":"Developer Projects","proj.title":"Glazing partner to Malaysia's leading developers","proj.lead":"From terrace houses to shop lots, we supply and install aluminium and glass for entire housing phases — on schedule and to specification.","proj.units":"Units under contract","proj.active":"Active developer projects","proj.note":"Project images are developers' artist impressions. Saintop scope: aluminium & glass supply and installation.",
     "p.aqila":"Aluminium & glass glazing · 72 semi-D units","p.duta":"219 terrace & semi-D units","p.gamuda":"164 shop lots","p.emilia":"99 double-storey terrace houses","p.laelia":"97 terrace houses","p.nadi":"86 triple-storey shop lots","p.amalia1":"68 terrace houses","p.amalia2":"40 terrace houses","p.melati":"5 blocks · 204 units","dev.shop":"Shophouse development",
@@ -32,7 +32,7 @@ const I18N = {
     "hero.cta1":"WhatsApp 免费报价","hero.cta2":"浏览产品目录","stat.est":"成立年份","stat.yrs":"20+ 年","stat.exp":"专业经验","stat.reg":"注册承包商",
     "trust":"知名发展商的信赖伙伴","prod.kicker":"产品系列","prod.title":"为每个空间量身订做的铝与玻璃产品","prod.dl":"下载 PDF 目录","designs":"款",
     "t.window":"窗户","d.window":"平开窗 · 推拉窗 · 折叠窗 · 百叶窗","t.sliding":"推拉门与折叠门","d.sliding":"多点锁 · 法式格 · 最多 10 扇折叠","t.swing":"平开门","d.swing":"标准框 · 窄框 · 无框钢化玻璃","t.toptrack":"吊轨门","d.toptrack":"隐形门 · 推拉平开门 · 窄框","t.glass":"玻璃隔间与浴室玻璃","d.glass":"店面 · U 槽 · 栏杆 · 镜子","t.netting":"纱网与窗花","d.netting":"磁吸纱网 · 折叠纱网 · 铝窗花",
-    "cat.title":"完整产品目录","cat.sub":"所有尺寸、玻璃种类与颜色均可订做。点图片可查看目录原页。","cat.more":"显示全部产品","cat.enquire":"询价",
+    "cat.title":"完整产品目录","cat.sub":"所有尺寸、玻璃种类与颜色均可订做。点图片可查看目录原页。","cat.more":"显示全部产品","cat.enquire":"询价","cat.pdf":"PDF 目录","cat.enqwa":"WhatsApp 询价",
     "f.all":"全部","f.window":"窗户","f.sliding":"推拉/折叠门","f.swing":"平开门","f.toptrack":"吊轨门","f.glass":"玻璃与浴室","f.netting":"纱网与窗花",
     "proj.kicker":"发展商项目","proj.title":"马来西亚知名发展商的门窗玻璃合作伙伴","proj.lead":"从排屋到店屋，我们为整期房屋项目供应并安装铝窗与玻璃 —— 准时交付，符合规格。","proj.units":"合约单位","proj.active":"进行中的发展商项目","proj.note":"项目图片为发展商效果图。Saintop 负责铝窗与玻璃的供应及安装。",
     "p.aqila":"铝窗与玻璃工程 · 72 间半独立式","p.duta":"219 间排屋与半独立式","p.gamuda":"164 间店屋","p.emilia":"99 间双层排屋","p.laelia":"97 间排屋","p.nadi":"86 间三层店屋","p.amalia1":"68 间排屋","p.amalia2":"40 间排屋","p.melati":"5 栋 · 204 单位","dev.shop":"店屋发展项目",
@@ -58,7 +58,7 @@ const I18N = {
     "hero.cta1":"WhatsApp untuk Sebut Harga Percuma","hero.cta2":"Lihat Katalog","stat.est":"Ditubuhkan","stat.yrs":"20+ tahun","stat.exp":"Pengalaman pakar","stat.reg":"Kontraktor berdaftar",
     "trust":"Dipercayai oleh pemaju terkemuka","prod.kicker":"Produk Kami","prod.title":"Aluminium & kaca ditempah khas untuk setiap ruang","prod.dl":"Muat turun katalog PDF","designs":"reka bentuk",
     "t.window":"Tingkap","d.window":"Casement · Gelongsor · Lipat · Louvre","t.sliding":"Pintu Gelongsor & Lipat","d.sliding":"Kunci berbilang · French · Lipat hingga 10 panel","t.swing":"Pintu Ayun","d.swing":"Standard · Slim · Kaca tempered tanpa bingkai","t.toptrack":"Pintu Trek Atas","d.toptrack":"Pintu ghost · Pintu PT · Profil slim","t.glass":"Partition Kaca & Bilik Mandi","d.glass":"Shopfront · U-channel · Railing · Cermin","t.netting":"Jaring & Gril","d.netting":"Jaring magnetik · Z-fold · Gril tingkap",
-    "cat.title":"Katalog penuh","cat.sub":"Setiap saiz, jenis kaca dan warna dibuat mengikut tempahan. Tekan gambar untuk lihat halaman katalog.","cat.more":"Tunjuk semua produk","cat.enquire":"Tanya Harga",
+    "cat.title":"Katalog penuh","cat.sub":"Setiap saiz, jenis kaca dan warna dibuat mengikut tempahan. Tekan gambar untuk lihat halaman katalog.","cat.more":"Tunjuk semua produk","cat.enquire":"Tanya Harga","cat.pdf":"Katalog PDF","cat.enqwa":"Tanya di WhatsApp",
     "f.all":"Semua","f.window":"Tingkap","f.sliding":"Gelongsor & Lipat","f.swing":"Pintu Ayun","f.toptrack":"Trek Atas","f.glass":"Kaca & Bilik Mandi","f.netting":"Jaring & Gril",
     "proj.kicker":"Projek Pemaju","proj.title":"Rakan kaca & aluminium kepada pemaju terkemuka Malaysia","proj.lead":"Dari rumah teres hingga lot kedai, kami membekal dan memasang aluminium dan kaca untuk keseluruhan fasa perumahan — tepat masa dan mengikut spesifikasi.","proj.units":"Unit dalam kontrak","proj.active":"Projek pemaju aktif","proj.note":"Imej projek ialah lakaran artis pemaju. Skop Saintop: pembekalan dan pemasangan aluminium & kaca.",
     "p.aqila":"Kerja aluminium & kaca · 72 unit semi-D","p.duta":"219 unit teres & semi-D","p.gamuda":"164 lot kedai","p.emilia":"99 rumah teres dua tingkat","p.laelia":"97 rumah teres","p.nadi":"86 lot kedai tiga tingkat","p.amalia1":"68 rumah teres","p.amalia2":"40 rumah teres","p.melati":"5 blok · 204 unit","dev.shop":"Pembangunan rumah kedai",
@@ -127,8 +127,29 @@ const cats = ['window','sliding','swing','toptrack','glass','netting'];
 const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
 const $ = id => document.getElementById(id);
 const qc = new URLSearchParams(location.search).get('c');
-let lang = 'en', filter = cats.includes(qc) ? qc : 'all', rfilter = 'all', rexpanded = false;
+let lang = 'en', rfilter = 'all', rexpanded = false, cur = 0;
 const t = k => I18N[lang][k] ?? I18N.en[k] ?? k;
+const PDF = { window: 'Saintop-Window', sliding: 'Saintop-Sliding-Folding-Door', swing: 'Saintop-Swing-Door', toptrack: 'Saintop-Top-Track', glass: 'Saintop-Glass-Partition', netting: 'Saintop-Netting-Mesh' };
+// [shown name, second line]: BM shows the Malay name over the English one, otherwise English over Chinese
+const pname = ([, img, name, zh]) => lang === 'ms' && MS[img] ? [MS[img], esc(name)] : [name, zh];
+
+// Pop-up viewer: steps through the products of the same type
+function show(i) {
+  cur = i;
+  const p = products[i], list = products.filter(q => q[0] === p[0]), lb = $('lb');
+  lb.querySelector('img').src = `img/${p[1]}.jpg`;
+  lb.querySelector('img').alt = p[2];
+  lb.querySelector('small').textContent = `${t('f.'+p[0])} · ${list.indexOf(p) + 1} / ${list.length}`;
+  lb.querySelector('h2').textContent = pname(p)[0];
+  lb.querySelector('p').innerHTML = pname(p)[1];
+  lb.querySelector('.btn').href = WA + encodeURIComponent(t('wa.item') + p[2]);
+  lb.querySelector('.btn span').textContent = t('cat.enqwa');
+  if (!lb.open) lb.showModal();
+}
+function step(d) {
+  const list = products.filter(q => q[0] === products[cur][0]), n = list.indexOf(products[cur]);
+  show(products.indexOf(list[(n + d + list.length) % list.length]));
+}
 
 // Each page only has some of these blocks; render whichever exist.
 function render() {
@@ -139,10 +160,14 @@ function render() {
     $('tiles2').innerHTML = tiles.slice(3).map(tile).join('');
   }
   if ($('grid')) {
-    $('filters').innerHTML = ['all', ...cats].map(c => `<button data-f="${c}" aria-pressed="${c === filter}">${t('f.'+c)}</button>`).join('');
-    $('grid').innerHTML = products.filter(p => filter === 'all' || p[0] === filter).map(([c, img, name, zh]) => `
-    <article class="card"><a class="shot" href="img/${img}.jpg" target="_blank"><img src="img/${img}.jpg" alt="${esc(name)}" loading="lazy"></a>
-    <div class="b"><h4>${esc(lang === 'ms' && MS[img] || name)}</h4><p class="zh">${lang === 'ms' && MS[img] ? esc(name) : zh}</p><a class="enq" target="_blank" rel="noopener" href="${WA}${encodeURIComponent(t('wa.item') + name)}">${t('cat.enquire')}</a></div></article>`).join('');
+    $('downloads').innerHTML = cats.map(c => `<a href="#c-${c}">${t('f.'+c)}</a>`).join('');
+    $('grid').innerHTML = cats.map(c => `
+    <section class="cat" id="c-${c}"><div class="cat-h"><h2>${t('t.'+c)} <span>· ${count(c)} ${t('designs')}</span></h2>
+    <a class="dl" href="catalogues/${PDF[c]}.pdf" download><svg><use href="#i-dl"/></svg>${t('cat.pdf')}</a></div>
+    <div class="grid">${products.map((p, i) => p[0] !== c ? '' : `
+    <article class="card"><a class="shot" href="img/${p[1]}.jpg" data-i="${i}"><img src="img/${p[1]}.jpg" alt="${esc(p[2])}" loading="lazy"></a>
+    <div class="b"><h4>${esc(pname(p)[0])}</h4><p class="zh">${pname(p)[1]}</p><a class="enq" target="_blank" rel="noopener" href="${WA}${encodeURIComponent(t('wa.item') + p[2])}">${t('cat.enquire')}</a></div></article>`).join('')}</div></section>`).join('');
+    if ($('lb').open) show(cur);
   }
   if ($('pgrid')) {
     $('pgrid').innerHTML = projects.slice(0, +$('pgrid').dataset.limit || projects.length).map(([img, name, dev, scope, units, done, feat]) => `
@@ -169,10 +194,29 @@ function setLang(l) {
 
 if ($('gallery')) $('gallery').innerHTML = showcase.map(img => `<a href="img/${img}.jpg" target="_blank"><img src="img/${img}.jpg" alt="Saintop installation" loading="lazy"></a>`).join('');
 document.querySelector('.lang').addEventListener('click', e => e.target.dataset.lang && setLang(e.target.dataset.lang));
-$('filters')?.addEventListener('click', e => {
-  const f = e.target.closest('[data-f]');
-  if (f) { filter = f.dataset.f; render(); }
+$('grid')?.addEventListener('click', e => {
+  const a = e.target.closest('[data-i]');
+  if (a) { e.preventDefault(); show(+a.dataset.i); }
 });
+if ($('lb')) {
+  const lb = $('lb');
+  let x0 = null;
+  lb.addEventListener('click', e => {
+    if (e.target === lb || e.target.closest('.lb-x')) lb.close();
+    else if (e.target.closest('.lb-nav')) step(e.target.closest('.next') ? 1 : -1);
+  });
+  lb.addEventListener('keydown', e => { if (e.key === 'ArrowRight') step(1); if (e.key === 'ArrowLeft') step(-1); });
+  lb.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - x0;
+    if (x0 !== null && Math.abs(dx) > 40) step(dx < 0 ? 1 : -1);
+    x0 = null;
+  });
+}
+// The type bar sticks under the header, whose height changes with screen width
+const setHH = () => document.documentElement.style.setProperty('--hh', document.querySelector('header').offsetHeight + 'px');
+setHH();
+addEventListener('resize', setHH);
 $('track')?.addEventListener('click', e => {
   const r = e.target.closest('[data-r]');
   if (r) { rfilter = r.dataset.r; render(); }
@@ -188,6 +232,8 @@ try { saved = localStorage.getItem('lang'); } catch (e) {}
 const urlLang = new URLSearchParams(location.search).get('lang');
 const nav = (navigator.language || '').toLowerCase();
 setLang(urlLang || saved || (nav.startsWith('zh') ? 'zh' : nav.startsWith('ms') ? 'ms' : 'en'));
+// Home page tiles link here with ?c=<type>
+if (cats.includes(qc)) $('c-' + qc)?.scrollIntoView({ behavior: 'instant' });
 
 // self-check: every language has every English key
 console.assert(refs.length === 52, 'expected 52 portfolio references, got ' + refs.length);

@@ -60,19 +60,20 @@
 
 <section id="products">
   <div class="wrap">
-    <div class="downloads" id="downloads">
-        <strong data-i18n="prod.dl">Download PDF catalogues</strong>
-        <a class="dl" href="catalogues/Saintop-Window.pdf" download data-i18n="f.window">Windows</a>
-        <a class="dl" href="catalogues/Saintop-Sliding-Folding-Door.pdf" download data-i18n="f.sliding">Sliding & Folding</a>
-        <a class="dl" href="catalogues/Saintop-Swing-Door.pdf" download data-i18n="f.swing">Swing Doors</a>
-        <a class="dl" href="catalogues/Saintop-Top-Track.pdf" download data-i18n="f.toptrack">Top Track</a>
-        <a class="dl" href="catalogues/Saintop-Glass-Partition.pdf" download data-i18n="f.glass">Glass & Shower</a>
-        <a class="dl" href="catalogues/Saintop-Netting-Mesh.pdf" download data-i18n="f.netting">Netting & Grille</a>
-      </div>
-      <div class="filters" id="filters" role="group" aria-label="Filter products"></div>
-      <div class="grid" id="grid"></div>
+      <nav class="filters jump" id="downloads" aria-label="Product types"></nav>
+      <div id="grid"></div>
   </div>
 </section>
+
+<dialog class="lb" id="lb" aria-label="Product picture">
+  <button class="lb-x" aria-label="Close">✕</button>
+  <button class="lb-nav prev" aria-label="Previous">‹</button>
+  <button class="lb-nav next" aria-label="Next">›</button>
+  <div class="lb-in">
+    <img alt="">
+    <div class="lb-info"><small></small><h2></h2><p></p><a class="btn btn-accent" target="_blank" rel="noopener"><svg><use href="#i-chat"/></svg><span></span></a></div>
+  </div>
+</dialog>
 
 <section class="contact" id="contact">
   <div class="wrap">
