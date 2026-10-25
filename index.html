@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saintop Development Sdn. Bhd.</title>
+<meta name="description" content="Saintop Development — custom aluminium & glass since 2008. Windows, sliding & folding doors, swing doors, top track, glass partitions, shower screens and mosquito netting. Bukit Serdang, Seri Kembangan.">
+<style>
+  :root {
+    --bg: #f4f5f9; --card: #fff; --ink: #161a33; --muted: #5b6078;
+    --brand: #1c1f86; --brand-2: #3138d0; --line: #dfe1ea; --wa: #1fa855;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC", sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+  a { color: inherit; }
+  img { display: block; max-width: 100%; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 16px; }
+
+  header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-weight: 800; text-decoration: none; color: var(--brand); letter-spacing: .02em; }
+  .logo small { display: block; font-weight: 500; font-size: .7rem; color: var(--muted); letter-spacing: .08em; margin-top: -4px; }
+  nav a { margin-left: 22px; text-decoration: none; color: var(--muted); font-weight: 500; }
+  nav a:hover { color: var(--brand); }
+
+  .hero { color: #fff; padding: 96px 0 104px; background: linear-gradient(100deg, rgba(20,22,90,.94) 0%, rgba(28,31,134,.82) 45%, rgba(28,31,134,.35) 100%), url(img/hero.jpg) center/cover; }
+  .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: .8rem; opacity: .8; margin: 0 0 12px; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.3rem); line-height: 1.12; margin: 0 0 14px; max-width: 720px; }
+  .hero p { font-size: 1.12rem; max-width: 600px; opacity: .92; margin: 0 0 28px; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 0; cursor: pointer; font-size: 1rem; }
+  .btn-wa { background: var(--wa); color: #fff; }
+  .btn-ghost { background: rgba(255,255,255,.16); color: #fff; margin-left: 8px; }
+  .stats { display: flex; flex-wrap: wrap; gap: 40px; margin-top: 48px; }
+  .stats b { display: block; font-size: 1.8rem; line-height: 1.1; }
+  .stats span { font-size: .9rem; opacity: .85; }
+
+  section { padding: 72px 0; }
+  h2 { font-size: 2rem; margin: 0 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 30px; }
+
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .filters button { border: 1px solid var(--line); background: var(--card); padding: 8px 16px; border-radius: 999px; cursor: pointer; font-size: .95rem; color: var(--ink); }
+  .filters button[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+  .card[hidden] { display: none; }
+  .card .shot { aspect-ratio: 419 / 595; background: #e8e9f0; }
+  .card .shot img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+  .card .shot:hover img { transform: scale(1.03); }
+  .body { padding: 14px 16px 16px; flex: 1; display: flex; flex-direction: column; }
+  .tag { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--brand-2); }
+  .card h3 { margin: 2px 0 2px; font-size: 1.05rem; line-height: 1.3; }
+  .zh { color: var(--muted); font-size: .88rem; margin: 0 0 14px; flex: 1; }
+  .card .btn { background: var(--bg); color: var(--brand); border: 1px solid var(--line); text-align: center; padding: 9px; font-size: .9rem; }
+  .card .btn:hover { background: var(--brand); color: #fff; }
+
+  .downloads { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); align-items: center; }
+  .downloads strong { margin-right: 6px; }
+  .downloads a { text-decoration: none; border: 1px solid var(--brand); color: var(--brand); padding: 7px 14px; border-radius: 8px; font-size: .9rem; }
+  .downloads a:hover { background: var(--brand); color: #fff; }
+
+  .dark { background: var(--brand); color: #fff; }
+  .dark .sub { color: #c9cbf2; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+  .gallery a { border-radius: 10px; overflow: hidden; aspect-ratio: 419 / 595; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; }
+
+  .about { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+  .feature { border-left: 3px solid var(--brand-2); padding-left: 14px; margin-bottom: 20px; }
+  .feature h3 { margin: 0 0 2px; font-size: 1.05rem; }
+  .feature p { margin: 0; color: var(--muted); }
+  .projects { list-style: none; padding: 0; margin: 0; }
+  .projects li { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; margin-bottom: 10px; }
+  .projects b { display: block; }
+  .projects span { color: var(--muted); font-size: .9rem; }
+
+  .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+  .contact dl { margin: 0; }
+  .contact dt { font-weight: 700; margin-top: 14px; }
+  .contact dd { margin: 0; color: var(--muted); }
+  iframe { width: 100%; height: 320px; border: 0; border-radius: 12px; }
+
+  footer { background: #11134f; color: #c9cbf2; text-align: center; padding: 24px 16px 80px; font-size: .88rem; }
+  .fab { position: fixed; right: 16px; bottom: 16px; background: var(--wa); color: #fff; border-radius: 999px; padding: 12px 18px; font-weight: 700; text-decoration: none; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+
+  @media (max-width: 720px) {
+    nav { display: none; }
+    .btn-ghost { margin: 8px 0 0; }
+    section { padding: 56px 0; }
+    .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .body { padding: 10px 12px 12px; }
+    .card h3 { font-size: .95rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#">SAINTOP<small>DEVELOPMENT SDN BHD</small></a>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Aluminium & Glass Specialist · Bukit Serdang</p>
+    <h1>From vision to reality, one panel at a time.</h1>
+    <p>Fully customised aluminium windows, doors, glass partitions, shower screens and curtain walls — designed, fabricated and installed by our own team. 铝窗、铝门、玻璃隔间，量身订做。</p>
+    <a class="btn btn-wa" href="https://wa.me/60127272841?text=Hi%20Saintop%2C%20I%20would%20like%20a%20quotation" target="_blank" rel="noopener">WhatsApp for Quotation</a>
+    <a class="btn btn-ghost" href="#products">View Catalogue</a>
+    <div class="stats">
+      <div><b>2008</b><span>Established</span></div>
+      <div><b>20+ yrs</b><span>Specialist experience</span></div>
+      <div><b>CIDB G5</b><span>Registered contractor</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <h2>Product Catalogue</h2>
+    <p class="sub">产品目录 · All sizes, glass types and powder-coated colours are custom made. Tap a picture to view it full size.</p>
+    <div class="filters" role="group" aria-label="Filter products">
+      <button aria-pressed="true" data-f="all">All 全部</button>
+      <button aria-pressed="false" data-f="window">Windows 窗</button>
+      <button aria-pressed="false" data-f="sliding">Sliding & Folding 推拉/折叠门</button>
+      <button aria-pressed="false" data-f="swing">Swing Doors 平开门</button>
+      <button aria-pressed="false" data-f="toptrack">Top Track 吊轨门</button>
+      <button aria-pressed="false" data-f="glass">Glass Partition & Shower 玻璃</button>
+      <button aria-pressed="false" data-f="netting">Netting & Grille 纱网</button>
+    </div>
+    <div class="grid" id="catalog"></div>
+
+    <div class="downloads">
+      <strong>Download full catalogues (PDF):</strong>
+      <a href="catalogues/Saintop-Window.pdf" download>Window</a>
+      <a href="catalogues/Saintop-Sliding-Folding-Door.pdf" download>Sliding / Folding</a>
+      <a href="catalogues/Saintop-Swing-Door.pdf" download>Swing Door</a>
+      <a href="catalogues/Saintop-Top-Track.pdf" download>Top Track</a>
+      <a href="catalogues/Saintop-Glass-Partition.pdf" download>Glass Partition</a>
+      <a href="catalogues/Saintop-Netting-Mesh.pdf" download>Netting / Mesh</a>
+    </div>
+  </div>
+</section>
+
+<section id="showcase" class="dark">
+  <div class="wrap">
+    <h2>Showcase</h2>
+    <p class="sub">完成作品 · Recent installations in homes, offices and shops.</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About Saintop</h2>
+      <p class="sub">关于我们 · Established 2008 in Kawasan Perindustrian Bukit Serdang. We work closely with interior designers, architects and developers, customising every product to the project's needs.</p>
+      <div class="feature"><h3>Tailor-made for your project</h3><p>Manufactured to your measurements and specifications.</p></div>
+      <div class="feature"><h3>End-to-end solution</h3><p>Supply and installation by our own experienced team — no need to hunt for installers.</p></div>
+      <div class="feature"><h3>After-sale service</h3><p>Repair, maintenance and professional advice to keep your products working at their best.</p></div>
+    </div>
+    <div>
+      <h2>Developer Projects</h2>
+      <p class="sub">Trusted by Sime Darby Property, Setia, Gamuda and more.</p>
+      <ul class="projects">
+        <li><b>Serenia Aqila — Sime Darby Property</b><span>Aluminium & glass glazing, 72 semi-D units</span></li>
+        <li><b>Duta Asiana — Kuala Selangor</b><span>Aluminium & glass glazing, 219 units</span></li>
+        <li><b>Setia Bayuemas Laelia 2</b><span>Aluminium & glass glazing, 97 terrace houses</span></li>
+        <li><b>Setia Ecohill 2 Nadi</b><span>Aluminium & glass glazing, 86 shop lots</span></li>
+        <li><b>Gamuda Gardens GGL51</b><span>Aluminium & glass glazing, 164 shop lots</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:var(--card);border-top:1px solid var(--line)">
+  <div class="wrap contact">
+    <div>
+      <h2>Contact Us</h2>
+      <p class="sub">联系我们 · Send us photos or measurements on WhatsApp for a fast quote.</p>
+      <dl>
+        <dt>Address 地址</dt><dd>No 20-22, Jalan BS 7/14, Kawasan Perindustrian Bukit Serdang, 43300 Seri Kembangan, Selangor</dd>
+        <dt>Phone / WhatsApp</dt><dd><a href="tel:+60127272841">012-727 2841</a></dd>
+        <dt>Email</dt><dd><a href="mailto:Operation.saintop@gmail.com">Operation.saintop@gmail.com</a></dd>
+        <dt>Facebook</dt><dd><a href="https://www.facebook.com/p/Saintop-Development-SDN-BHD-100090560094258/" target="_blank" rel="noopener">Saintop Development SDN BHD</a></dd>
+      </dl>
+      <p><a class="btn btn-wa" href="https://wa.me/60127272841" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+    </div>
+    <iframe title="Map" loading="lazy" src="https://maps.google.com/maps?q=Jalan%20BS%207%2F14%2C%20Bukit%20Serdang%2C%2043300%20Seri%20Kembangan&z=15&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> Saintop Development Sdn. Bhd. (200801002853 / 804137-H) · CIDB G5. All rights reserved.</footer>
+<a class="fab" href="https://wa.me/60127272841" target="_blank" rel="noopener" aria-label="WhatsApp us">WhatsApp</a>
+
+<script>
+  // Edit these lists to change the catalogue. Images are pages from the PDF catalogues (img/<book>-<page>.jpg).
+  const products = [
+    ['window', 'window-01', 'Standard Casement Window', '平开窗 · Single lock'],
+    ['window', 'window-02', 'Performance Casement Window', '平开窗 · Multi-lock'],
+    ['window', 'window-03', 'Mesh 2-in-1 Multilock Casement', '纱窗二合一平开窗'],
+    ['window', 'window-04', 'Performance Folding Window', '折叠窗'],
+    ['window', 'window-05', 'Performance Folding Up Window', '上翻折叠窗'],
+    ['window', 'window-06', 'Fix Glass Ventilation Window', '固定玻璃通风窗'],
+    ['window', 'window-07', 'Sliding Window', '推拉窗 · Standard & Performance'],
+    ['window', 'window-08', 'Mesh Performance Sliding Window', '纱网推拉窗'],
+    ['sliding', 'sliding-01', 'Standard Sliding Door', '推拉门 · With track, clear glass'],
+    ['sliding', 'sliding-03', 'Performance Multi-Locking Sliding Door', '多点锁推拉门'],
+    ['sliding', 'sliding-05', 'Multi-Locking Sliding Door — French Design', '法式格推拉门'],
+    ['sliding', 'sliding-06', 'Mesh Multi-Locking Sliding Door', '纱网推拉门'],
+    ['sliding', 'sliding-07', 'Folding Door — 2 & 3 Panel', '折叠门 2+0 / 3+0'],
+    ['sliding', 'sliding-08', 'Folding Door — 4 Panel', '折叠门 4+0 / 3+1'],
+    ['sliding', 'sliding-09', 'Folding Door — 10 Panel', '折叠门 10+0'],
+    ['sliding', 'sliding-10', 'Folding Door — 6 Panel', '折叠门 3+3'],
+    ['sliding', 'sliding-11', 'Mesh Performance Folding Door', '纱网折叠门'],
+    ['swing', 'swing-01', 'Standard Swing Door — Single Leaf', '平开门 · 单开'],
+    ['swing', 'swing-02', 'Swing Door — Double Leaf, French Design', '法式双开门'],
+    ['swing', 'swing-03', 'Slim Profile Swing Door', '窄框平开门 · Moru / reeded glass'],
+    ['swing', 'swing-04', 'Mesh Performance Swing Door', '纱网平开门'],
+    ['swing', 'swing-06', 'Tempered Glass Door', '钢化玻璃门 · Frameless 12mm / framed 8mm'],
+    ['toptrack', 'toptrack-01', 'Top Track Sliding Door', '吊轨推拉门 · Clear glass'],
+    ['toptrack', 'toptrack-02', 'Top Track Sliding Door — French Design', '法式吊轨门'],
+    ['toptrack', 'toptrack-03', 'Ghost Door — Single Panel', '隐形吊轨门'],
+    ['toptrack', 'toptrack-04', 'PT Door (Slide & Swing)', '推拉平开两用门'],
+    ['toptrack', 'toptrack-06', 'Slim Profile Single Panel', '窄框吊轨门'],
+    ['toptrack', 'toptrack-07', 'Slim Profile — French Design', '窄框法式吊轨门'],
+    ['toptrack', 'toptrack-08', 'Slim Profile 2+0 / 3+0', '窄框多扇吊轨门'],
+    ['glass', 'glass-01', 'Aluminium Shopfront Fix Panel', '铝框玻璃隔间'],
+    ['glass', 'glass-02', 'Shopfront Fix Panel & Frameless Door', '玻璃隔间 + 无框门'],
+    ['glass', 'glass-03', 'Fix Glass Panel with U Channel', 'U槽固定玻璃'],
+    ['glass', 'glass-04', 'U Channel Fix Panel & Frameless Door', 'U槽玻璃 + 无框门'],
+    ['glass', 'glass-05', 'Aluminium Shopfront — Arch Design', '拱形玻璃'],
+    ['glass', 'glass-06', 'Shower Screen — Fix Panel', '浴室玻璃 · 固定'],
+    ['glass', 'glass-07', 'Shower Screen — Frameless Fix & Door', '无框浴室玻璃门'],
+    ['glass', 'glass-08', 'Shower Screen — Black U Channel', '黑色U槽浴室玻璃'],
+    ['glass', 'glass-10', 'Shower Screen — Sliding', '推拉浴室玻璃'],
+    ['glass', 'glass-11', 'Glass Railing — U Channel', '玻璃栏杆'],
+    ['glass', 'glass-12', 'Glass Railing — Balustrade', '玻璃扶手栏杆'],
+    ['glass', 'glass-13', 'Mirror', '镜子 · U channel / frameless'],
+    ['netting', 'netting-01', 'Magnetic Mosquito Netting', '磁吸纱网'],
+    ['netting', 'netting-02', 'Z-Fold Mosquito Netting', '折叠纱网'],
+    ['netting', 'netting-03', 'Aluminium Window Grille', '铝窗花'],
+    ['netting', 'netting-09', 'Triox Swing Door — Glass + Mesh', '三合一平开门']
+  ];
+  const showcase = ['glass-14', 'window-10', 'sliding-14', 'toptrack-13', 'glass-21', 'swing-14', 'sliding-18', 'toptrack-19',
+                    'glass-19', 'window-12', 'toptrack-17', 'glass-16', 'sliding-12', 'swing-11', 'window-14', 'glass-24'];
+  const labels = { window: 'Window', sliding: 'Sliding / Folding', swing: 'Swing Door', toptrack: 'Top Track', glass: 'Glass', netting: 'Netting / Mesh' };
+
+  document.getElementById('catalog').innerHTML = products.map(([cat, img, name, zh]) => `
+    <article class="card" data-cat="${cat}">
+      <a class="shot" href="img/${img}.jpg" target="_blank"><img src="img/${img}.jpg" alt="${name}" loading="lazy"></a>
+      <div class="body">
+        <span class="tag">${labels[cat]}</span>
+        <h3>${name}</h3>
+        <p class="zh">${zh}</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://wa.me/60127272841?text=${encodeURIComponent('Hi Saintop, I am interested in: ' + name)}">Enquire 询价</a>
+      </div>
+    </article>`).join('');
+  document.getElementById('gallery').innerHTML = showcase.map(img =>
+    `<a href="img/${img}.jpg" target="_blank"><img src="img/${img}.jpg" alt="Saintop installation" loading="lazy"></a>`).join('');
+
+  document.querySelectorAll('.filters button').forEach(b => b.onclick = () => {
+    document.querySelectorAll('.filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    document.querySelectorAll('.card').forEach(c => c.hidden = b.dataset.f !== 'all' && c.dataset.cat !== b.dataset.f);
+  });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
